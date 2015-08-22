@@ -2,10 +2,15 @@
   "name": "broadband-help",
   "version": "0.0.1",
   "description": "A replacement for BB diagnostics, BB connection and mf check",
-  "main": "index.js",
+  "main": "app/app.js",
   "scripts": {
+    "start": "node --harmony app/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sam Warren",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^0.21.0",
+    "koa-router": "^5.1.2"
+  }
 }
