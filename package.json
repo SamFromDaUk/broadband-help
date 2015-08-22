@@ -4,13 +4,16 @@
   "description": "A replacement for BB diagnostics, BB connection and mf check",
   "main": "app/app.js",
   "scripts": {
-    "start": "node --harmony app/app.js",
+    "start": "node_modules/supervisor/lib/cli-wrapper.js --harmony app/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sam Warren",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^1.2.0",
     "koa": "^0.21.0",
-    "koa-router": "^5.1.2"
+    "koa-handlebars": "^0.5.7",
+    "koa-router": "^5.1.2",
+    "supervisor": "^0.7.1"
   }
 }
