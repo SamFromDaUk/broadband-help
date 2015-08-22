@@ -1,0 +1,11 @@
+{
+  "name": "broadband-help",
+  "version": "0.0.1",
+  "description": "A replacement for BB diagnostics, BB connection and mf check",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Warren",
+  "license": "ISC"
+}
