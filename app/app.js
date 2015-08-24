@@ -31,10 +31,6 @@ assets.then(function(masthead) {
         });
     });
 
+    console.log('Application started on port: ' + port);
     app.listen(port);
 });
-
-
-
-
-console.log('Application started on port: ' + port);
