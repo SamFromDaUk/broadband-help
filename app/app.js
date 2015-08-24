@@ -21,11 +21,10 @@ console.log('MASTHEAD: loading');
 assets.then(function(masthead) {
     console.log('MASTHEAD: loaded');
 
-    console.log(masthead);
-
     app.use(router.routes())
     app.use(router.allowedMethods())
     app.use(function *(){
+        this.status = 404;
         yield this.render('404', {
             title: 'Page not found',
             masthead: masthead
